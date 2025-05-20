@@ -46,4 +46,4 @@ O jogo **"Mata-Barata"** implementa uma série de mecânicas interativas e dinâ
 
 Agora é hora de testar e se divertir! 🚀
 
-🔗 [Jogue aqui!](https://rodrigoms.github.io/catching-cockroaches/)
+🔗 [Jogue aqui!](https://rodrigoms.github.io/cockroach-catching-game/)
