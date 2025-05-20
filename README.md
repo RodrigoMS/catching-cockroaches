@@ -24,3 +24,5 @@ Capture as Baratas
    O jogo "Mata-Barata" implementa uma série de mecânicas interativas e dinâmicas para proporcionar uma experiência envolvente. Desde a movimentação autônoma das baratas até a alternância de imagens e o sistema de colisão, todos os elementos foram pensados para tornar o jogo mais realista e divertido.
 
 Agora é hora de testar e se divertir! 🪳🔥
+
+https://rodrigoms.github.io/catching-cockroaches/
