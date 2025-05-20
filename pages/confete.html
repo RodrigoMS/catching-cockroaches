@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chuva de Confetes</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: #000;
+      }
+      .confete {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        animation: cair linear infinite;
+      }
+      @keyframes cair {
+        0% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function criarConfete() {
+        const confete = document.createElement('div');
+        confete.classList.add('confete');
+
+        const tamanho = Math.random() * 10 + 5;
+        confete.style.width = `${tamanho}px`;
+        confete.style.height = `${tamanho}px`;
+
+        const cores = [
+          '#ff0000',
+          '#ff8000',
+          '#ffff00',
+          '#00ff00',
+          '#00ffff',
+          '#0000ff',
+          '#8000ff',
+          '#ff0080',
+        ];
+        confete.style.backgroundColor =
+          cores[Math.floor(Math.random() * cores.length)];
+
+        confete.style.left = `${Math.random() * window.innerWidth}px`;
+        confete.style.top = `-${tamanho}px`;
+
+        confete.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        document.body.appendChild(confete);
+
+        setTimeout(() => confete.remove(), 5000);
+      }
+
+      setInterval(criarConfete, 100);
+    </script>
+  </body>
+</html>
